@@ -5,6 +5,6 @@ Team ID : PNT2022TMID23587
 
 Team members:
 - Tharika Jayaraj
-- Haripriya 
-- Miridhula 
-- Sahithya 
+- Haripriya P
+- Miridhula S V
+- Sahithya V
