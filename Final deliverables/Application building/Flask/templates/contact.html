@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureSurfers</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style1.css') }}">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <nav>
+        <ul>
+        <li id="websiteName">SecureSurfers.</li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('homepage') }}">Home</a></li>
+
+        </ul>
+    </nav>
+
+    <div id="phishingSection">
+        <section id="contact">
+        <h1>Contact Us</h1>
+        <form name="EmailForm" id="formid">
+        <br><br>
+        <p>Email-ID :</p><br>
+        <input type="text" id="mailId">
+        <br><br>
+        <p>Message :</p><br>
+        <textarea id="message"></textarea>
+        <br><br>
+        <button type="submit" value="Submit" id="predictButton">Submit</button>
+
+        </form>
+
+        <p id="output"></p>
+        </section>
+    </div>
+
+</body>
+<script>
+    document.getElementById('formid').onsubmit= function(){submit()};
+
+    function submit(){
+        alert("Thank you for your contacting us. Will get back to you soon.");
+    }
+</script>
+</html>
+
